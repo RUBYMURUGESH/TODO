@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>To-Do List</title>
+</head>
+<body>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'Times New Roman';
+  }
+.todowrap
+ {
+  background-color:seagreen;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vb;
+  align-items: center;
+  padding: 5%;
+}
+.todo-container 
+{
+  background-color:#fff;
+  max-width: 80%;
+  width: 100%;
+  padding: 30px;
+}
+.add-task-wrap 
+{
+  padding: 16px;
+  text-align: center;
+  background-color:steelblue;
+}
+.list-input-box 
+{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.input-filed 
+{
+  border: 0;
+  height: 30px;
+  margin: 0px;
+  width: 100%;
+  color: #495057;
+  padding: 20px;
+  font-size: 18px;
+  outline: none;
+}
+.btn-sub {
+  width: 120px;
+  height: 40px;
+  padding: 0 3px;
+  background-color: #fff;
+  border: none;
+  letter-spacing: 0;
+  color: #2196f3;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 700;
+}
+.todo-task-list 
+{
+  margin-top: 30px;
+}
+.heading-tasklist {
+  font-size:medium;
+  color: #2196f3;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+   </style>
+ <section class="todowrap">
+    <div class="todo-container">
+      <div class="add-task-wrap">
+        <form action="" id="add-task-form">
+          <div class="list-input-box">
+            <input type="text" class="input-filed" placeholder="TYPE HERE........" id="add-task-input">
+            <button class="btn-sub" type="submit" id="add-task-submit">Add Task</button>
+          </div>
+        </form>
+      </div>
+    </div>
+ <div class="todo-container todo-task-list">
+      <h6 class=" heading-tasklist"> Todo Tasks List</h6>
+      <div id="todo-tasks"></div>
+      </div>
+    </div>
+    
+ </section>
+<script src="todo.js"></script>
+</body>
+</html>
+  
+  
